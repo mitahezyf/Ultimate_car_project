@@ -113,8 +113,13 @@ class Car {
 
 
     public void printCarStatus() {
-        System.out.println("\nStatus samochodu:");
-        System.out.println("Silnik: " + (engineOn ? "\u001B[32mWłączony\u001B[0m" : "Wyłączony"));
+        System.out.println("\n\u001B[34m=====================\u001B[0m");
+        System.out.println("   Dane samochodu");
+        System.out.println("\u001B[34m=====================\u001B[0m");
+        System.out.println("Marka/Model: Honda/Civic");
+        System.out.println("Skrzynia biegów: 6- biegowa");
+        System.out.println("Predkość max.: 220km/h");
+        System.out.println("Status silnika: " + (engineOn ? "\u001B[32mWłączony\u001B[0m" : "Wyłączony"));
         System.out.println("Bieg: " + gear);
         System.out.println("Prędkość: " + speed + " km/h");
         System.out.println("Obroty silnika: " + engineRPM);

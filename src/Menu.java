@@ -18,20 +18,20 @@ class Menu {
         int choice = 0;
 
         while (choice != 7) {
-            System.out.println("=====================");
-            System.out.println("       Menu");
-            System.out.println("=====================");
+            System.out.println("\n\u001B[31m=====================\u001B[0m");
+            System.out.println("       \u001B[33mMenu\u001B[0m");
+            System.out.println("\u001B[31m=====================\u001B[0m");
             if (car.isEngineOn()) {
-                System.out.println("\u001B[32m1. Włącz silnik\u001B[0m");
+                System.out.println("\u001B[32m1. Zapal silnik\u001B[0m");
             } else {
-                System.out.println("1. Włącz silnik");
+                System.out.println("1. Zapal silnik");
             }
-            System.out.println("2. Wyłącz silnik");
-            System.out.println("3. Zmień bieg");
-            System.out.println("4. Przyśpiesz");
-            System.out.println("5. Zhamuj");
+            System.out.println("2. Zgaś silnik");
+            System.out.println("3. Zmiana biegów");
+            System.out.println("4. Przyśpieszania");
+            System.out.println("5. Hamowanie");
             System.out.println("6. Wyświetl status samochodu");
-            System.out.println("7. Wyjście");
+            System.out.println("7. Wyjście(zamknij program)");
 
             System.out.print("Wybierz opcję: ");
             choice = scanner.nextInt();
