@@ -15,6 +15,11 @@ class Menu {
     }
 
     public void displayMenu() {
+
+        Poster poster = new Poster();
+        DontGiveUp dontGiveUp = new DontGiveUp();
+
+
         int choice = 0;
 
         while (choice != 7) {
@@ -65,6 +70,8 @@ class Menu {
                     System.out.println("Do widzenia!");
                     programTerminator.terminateProgram();
                 }
+                case 8 -> poster.photo();
+                case  1987-> dontGiveUp.NeverGonna();
                 default -> System.out.println("Nieprawidłowa opcja. Spróbuj ponownie.");
             }
         }
